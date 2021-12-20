@@ -8,11 +8,11 @@
 }
 
 .red-circle {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: var(--main-red);
   border-radius: 25px;
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 .flex {

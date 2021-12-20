@@ -2,7 +2,7 @@
 @import "cssreset.css";
 @import "sections/problem-section.css";
 @import "sections/services-section.css";
-@import "sections/portfolio-section.css";
+@import "sections/why-section.css";
 @import "sections/experience-section.css";
 @import "sections/story-section.css";
 @import "sections/testimonials-section.css";
@@ -22,6 +22,10 @@
   font-weight:normal;
   font-size: 42px;
   color: white;
+}
+
+body {
+  font-family: 'Milliard Book';
 }
 
 .programare-button {
@@ -97,13 +101,12 @@ header .header-description-container {
 }
 header .headline {
   font-size: 42px;
-  margin-bottom: 12px;
   font-family: 'Milliard ExtraBold';
 }
 
 header .headline-small {
   max-width: 700px;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
   font-size: 42px;
   font-family: 'Milliard ExtraBold';
 }
@@ -125,7 +128,6 @@ header .logo{
 }
 header .header-text{
   font-size: 24px;
-  max-width: 400px;
 }
 header .menu-btn{
   font-weight: 700;
