@@ -19,6 +19,10 @@
   display: flex;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -40,11 +44,15 @@
 }
 
 .items-center {
-  align-items: start;
+  align-items: center;
 }
 
 .w-100 {
   width: 100%;
+}
+
+.w-60 {
+  width: 60%;
 }
 
 .h-100 {

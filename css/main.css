@@ -1,11 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700'); */
 @import "cssreset.css";
 @import "sections/problem-section.css";
-@import "sections/services-section.css";
+@import "sections/imagine-section.css";
 @import "sections/why-section.css";
 @import "sections/experience-section.css";
 @import "sections/story-section.css";
-@import "sections/testimonials-section.css";
+@import "sections/how-section.css";
 @import "portfolio/portfolio-projects.css";
 @import "fonts/style.css";
 @import "footer-section.css";
@@ -119,9 +119,9 @@ header .details {
 }
 
 header .logo{
-  width: 100px;
-  height: 80px;
-  background-image: url('../img/logo.png');
+  width: 220px;
+  height: 132px;
+  background-image: url('../img/logo-good.svg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,0 +1,50 @@
+#imagine-section {
+  background-color: #f7f7f7;
+  padding: 60px 0px;
+  margin-bottom: 100px;
+}
+
+#imagine-section .headline {
+  font-size: 42px;
+  font-family: 'Milliard ExtraBold';
+  color: black;
+  margin-bottom: 70px;
+}
+
+#imagine-section .idea-container {
+  max-width: 130px;
+}
+
+#imagine-section .idea-row {
+  margin-bottom: 40px;
+}
+
+#imagine-section .text {
+  font-size: 22px;
+  font-family: 'Milliard Medium';
+  color: black;
+  text-align: center;
+}
+
+#imagine-section .image {
+  margin-bottom: 26px;
+  width: 122px;
+  height: 122px;
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px){
+  #services-section .services-container{
+    grid-template-columns: 100%;
+  }
+  #services-section .services-container .box{
+    background: rgba(255,255,255, 1);
+    -webkit-box-shadow: 0px 40px 74px 24px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 40px 74px 24px rgba(0,0,0,0.08);
+    box-shadow: 0px 40px 74px 24px rgba(0,0,0,0.08);
+  }
+}
+/* Phones */
+@media only screen and (max-width: 767px){
+
+}
