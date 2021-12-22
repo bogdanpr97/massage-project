@@ -3,9 +3,10 @@
 @import "sections/problem-section.css";
 @import "sections/imagine-section.css";
 @import "sections/why-section.css";
-@import "sections/experience-section.css";
+@import "sections/details-section.css";
 @import "sections/story-section.css";
 @import "sections/how-section.css";
+@import "sections/massage-section.css";
 @import "portfolio/portfolio-projects.css";
 @import "fonts/style.css";
 @import "footer-section.css";
