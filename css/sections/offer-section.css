@@ -1,0 +1,13 @@
+#offer-section {
+  margin-bottom: 80px;
+}
+
+#offer-section .headline {
+  font-family: 'Milliard ExtraBold';
+  margin-bottom: 30px;
+}
+
+#offer-section .text {
+  color: black;
+  font-family: 'Milliard SemiBold';
+}

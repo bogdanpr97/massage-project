@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/main.css">
-    <?php wp_head(); ?> -->
+    <!-- <link href="css/input.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
   </head>
-  <body>
-    <div class="header-container">
-      <header class="container" style="height: 100%">
+  <body class="overflow-x-hidden">
+    <div class="header-container text-center sm:text-left ">
+      <div class="container relative mx-auto px-4 h-full text-xl" id="header">
+        <div class="poza-overlay hidden lg:block"></div>
         <div class="header-upper">
-          <div class="logo"></div>
-          <div class="header-text flex items-center">
+          <img src="img/Logosvg.svg" class="logo"></img>
+          <div class="header-text none items-center hidden lg:flex">
             <p>Peste 8 ani experiență atât națională </br> cât și internațională</p>
           </div>
         </div>
-        <div class="header-bottom">
-          <div class="poza-overlay"></div>
-          <div class="header-description-container">
-            <div class="headline radient-bg">
+        <div class="header-bottom text-xl mb-9 overflow-hidden w-full">
+          <div class="header-description-container items-center sm:items-start">
+            <div class="headline radient-bg text-2xl lg:text-4xl">
               Cum să-ți gestionezi ca un învingător -
             </div>
-            <div class="headline-small">
+            <div class="headline-small text-2xl lg:text-4xl">
               durerile musculare, anxietățile, depresiile, care apar la un moment dat in viața ta?
             </div>
             <div class="details">
@@ -34,36 +37,35 @@
             <div class="details">
               Când vine vorba de bunăstare și sănătate, iau lucrurile foarte în serios!
             </div>
-            <div class="programare-button">Vreau o programare</div>
+            <div class="programare-button text-xl p-2 w-11/12 lg:w-72" onclick="scrollToContact()">Vreau o programare</div>
           </div>
         </div>
-      </header>
+      </div>
     </div>
     <section id="problem-section">
-      <div class="container">
-        <div class="flex flex-col">
-            <div class="flex flex-row space-between w-100">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
               <div class="flex flex-col">
-                <div class="headline radient-bg">
+                <div class="headline radient-bg text-2xl lg:text-4xl">
                   Te regăsești în oricare dintre
                 </div>
-                <div class="headline-small black">
+                <div class="headline-small black text-2xl lg:text-4xl">
                   rândurile de mai jos?
                 </div>
-                <div class="flex flex-col items-start black">
-                  <div class="flex flex-row justify-start">
+                <div class="flex flex-col items-start black text-xl">
+                  <div class="flex flex-row justify-start mb-6">
                     <div class="red-circle"></div>
                     <div class="details black">
                       Abia mai poți face față responsabilităților de zi cu zi, ți-a scăzut eficiența și te simți tot mai epuizat (burn-out)
                     </div>
                   </div>
-                  <div class="flex flex-row justify-start">
+                  <div class="flex flex-row justify-start mb-6">
                     <div class="red-circle"></div>
                     <div class="details black">
                       Te interesează cum să-ți gestionezi energia mai bine
                     </div>
                   </div>
-                  <div class="flex flex-row justify-start">
+                  <div class="flex flex-row justify-start mb-6">
                     <div class="red-circle"></div>
                     <div class="details black">
                       Vrei sa-ti intelegi corpul si de ce are nevoie pentru a functiona cum trebuie?
@@ -71,40 +73,37 @@
                   </div>
                 </div>
               </div>
-              <div class="stressed-woman"></div>
-            </div>   
-            <div class="flex flex-row space-between w-100">
-              <div class="stressed-woman-chair"></div>
-                <div class="flex flex-col items-start justify-center black">
-                  <div class="flex flex-row justify-start">
+              <div class="stressed-woman w-100 h-72 lg:h-96 object-cover object-center bg-no-repeat bg-cover drop-shadow-md"></div>
+              <div class="stressed-woman-chair w-100 h-72 lg:h-96 object-cover object-center bg-no-repeat bg-cover drop-shadow-md"></div>
+                <div class="flex flex-col items-start justify-center black text-xl">
+                  <div class="flex flex-row justify-start mb-6">
                     <div class="red-circle"></div>
                     <div class="details black">
                       Te simți din ce în ce mai obosit si vrei sa ai energie din nou sa-ti traiesti viata.
                     </div>
                   </div>
-                  <div class="flex flex-row justify-start">
+                  <div class="flex flex-row justify-start mb-6">
                     <div class="red-circle"></div>
                     <div class="details black">
                       Te-ai săturat de atacuri de panică și vrei să scapi de ele DEFINITIV
                     </div>
                   </div>
-                  <div class="flex flex-row justify-start">
+                  <div class="flex flex-row justify-start mb-6">
                     <div class="red-circle"></div>
                     <div class="details black">
                       Dorești să afli cum îți poți gestiona anxietățile
                     </div>
                   </div>
                 </div>
-            </div> 
         </div> 
       </div>
     </section>
     <section id="story-section">
-      <div class="container">
-        <div class="over-text headline radient-bg">
+      <div class="container mx-auto px-4 text-xl">
+        <div class="over-text headline radient-bg w-full text-2xl lg:text-4xl lg:w-1/2 lg:ml-3">
           Atunci te afli în locul potrivit!
         </div>
-        <div class="masaj-story"></div>
+        <div class="masaj-story w-full lg:w-2/3"></div>
         <div class="details black">
           <span class="bold black">Masaj by Pedro</span> este locul tau de bunăstare!
         </div>
@@ -114,13 +113,13 @@
         <div class="details black">
           În urma evaluării, vei fi îndrumat și consiliat pentru a alege cel mai bun masaj in functie de nevoile tale. 
         </div>
-        <div class="programare-button">Obține o programare</div>
+        <div class="programare-button text-xl p-2 w-11/12 lg:w-72 mx-auto lg:mx-0" onclick="scrollToContact()">Obține o programare</div>
       </div>
     </section>
     <section id="why-section">
-      <div class="bg w-100 h-100 radient-bg">
-        <div class="container">
-          <div class="headline">
+      <div class="bg w-100 h-100 radient-bg text-xl">
+        <div class="container mx-auto px-4">
+          <div class="headline text-4xl lg:text-4xl">
             De ce masajul?
           </div>
           <div class="details">
@@ -142,46 +141,44 @@
       </div>
     </section>
     <section id="imagine-section">
-      <div class="container flex flex-col items-center justify-center">
-        <div class="headline">
+      <div class="container mx-auto px-4 flex flex-col items-center justify-center text-xl">
+        <div class="headline text-2xl lg:text-4xl">
           Imaginează-ți cum ar fi pentru tine să:
         </div>
-        <div class="flex w-60 space-between idea-row">
-          <div class="flex flex-col items-center idea-container">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mb-6">
+          <div class="flex flex-col items-center idea-container lg:mx-12">
             <img src="/img/imagine-section/affection.png" alt="" class="image">
             <div class="text">Te bucuri din nou de viață</div>
           </div>
-          <div class="flex flex-col items-center idea-container">
+          <div class="flex flex-col items-center idea-container lg:mx-12">
             <img src="/img/imagine-section/psychology.png" alt="" class="image">
             <div class="text">Iți depăsești toate problemele</div>
           </div>
-          <div class="flex flex-col items-center idea-container">
+          <div class="flex flex-col items-center idea-container lg:mx-12">
             <img src="/img/imagine-section/brain.png" alt="" class="image">
             <div class="text">Fii fericit, împlinit și prosper</div>
           </div>
-        </div>
-        <div class="flex w-60 space-between idea-row">
-          <div class="flex flex-col items-center idea-container">
+          <div class="flex flex-col items-center idea-container lg:mx-12">
             <img src="/img/imagine-section/confidence.png" alt="" class="image">
             <div class="text">Devii cea mai bună versiune a ta</div>
           </div>
-          <div class="flex flex-col items-center idea-container">
+          <div class="flex flex-col items-center idea-container lg:mx-12">
             <img src="/img/imagine-section/friends.png" alt="" class="image">
             <div class="text">Să ai relații armonioase</div>
           </div>
-          <div class="flex flex-col items-center idea-container">
+          <div class="flex flex-col items-center idea-container lg:mx-12">
             <img src="/img/imagine-section/heartbeat.png" alt="" class="image">
             <div class="text">Să fii sănătos (emoțional și fizic)</div>
           </div>
         </div>
-        <div class="programare-button">Cere o programare</div>
+        <div class="programare-button text-xl p-2 w-11/12 lg:w-72 mx-auto lg:mx-0" onclick="scrollToContact()">Cere o programare</div>
       </div>
     </section>
     <section id="how-section">
-      <div class="container flex">
-        <div class="hand-towel"></div>
+      <div class="container mx-auto px-4 flex flex-col lg:flex-row text-xl">
+        <div class="hand-towel w-full lg:w-1/3 mb-6 lg:mb-0"></div>
         <div class="flex flex-col flex-1">
-          <div class="headline">
+          <div class="headline text-2xl lg:text-4xl">
             Cum se vor desfășura în general ședințele de masaj? 
           </div>
           <div class="text">
@@ -199,11 +196,11 @@
         </div>
       </div>
     </section>
-    <section id="details-section">
-      <div class="container flex">
+    <section class="lg:mb-24" id="details-section">
+      <div class="container mx-auto px-4 flex flex-col lg:flex-row text-xl">
         <div class="flex flex-col left-side">
           <div class="flex flex-col top-left">
-            <div class="headline radient-bg">
+            <div class="headline text-2xl lg:text-4xl radient-bg">
               Câte ședințe se fac în total și la ce intervale de timp între ele?
             </div>
             <div class="text">
@@ -247,7 +244,7 @@
             </div>
           </div>       
           <div class="flex flex-col bottom-left">
-            <div class="headline black">
+            <div class="headline text-2xl lg:text-4xl black">
               Cât costă o ședință de masaj?
             </div>
             <div class="text">
@@ -257,31 +254,32 @@
               Mai multe detalii, veți primi după ce veți fi contactat pentru a stabili o programare.
             </div>
           </div>
-          <div class="programare-button">Cere o programare</div>
+          <div class="programare-button text-xl p-2 w-11/12 lg:w-72 mx-auto lg:mx-0 mb-8 lg:mb-0" onclick="scrollToContact()">Cere o programare</div>
         </div>
-        <div class="flex flex-col right-side">
-          <div class="headline black" style="text-align: center;">
+        <div class="flex flex-col right-side ml-0 lg:ml-9">
+          <div class="headline text-2xl lg:text-4xl black lg:text-center">
             Pentru optimizarea și menținerea rezultatelor, am creat pentru tine 
             programe de sedinte
             special alese in functie 
+            de nevoile tale.
           </div>
-          <div class="pedro-balcon">
+          <div class="pedro-balcon w-100 h-72 lg:h-full hidden lg:block">
             
           </div>
         </div>
       </div>
     </section>
     <section id="massage-section">
-      <div class="container flex">
-        <div class="flex flex-col flex-1" style="margin-right: 30px;">
-          <div class="pedro-masaj-spate"></div>
-          <div class="pedro-masaj-stomac"></div>
+      <div class="container mx-auto px-4 flex flex-col lg:flex-row text-lg">
+        <div class="flex flex-col flex-1 mb-5 lg:mr-8 lg:mb-0">
+          <div class="pedro-masaj-spate h-64  lg:h-1/2"></div>
+          <div class="pedro-masaj-stomac h-64 lg:h-1/2"></div>
         </div>
         <div class="flex-col flex-1">
-          <div class="headline radient-bg">
+          <div class="headline radient-bg text-2xl lg:text-4xl">
             Ce este masajul?
           </div>
-          <div class="small-headline">
+          <div class="small-headline text-2xl lg:text-4xl">
             Este atât o știință, cât și o artă! :)
           </div>
           <div class="text">
@@ -317,32 +315,50 @@
               Atenție a parților din corp care te fac să nu-ți trăiești viața la potențialul tău maxim din punct de vedere fizic
             </div>
           </div>
-          <div class="programare-button">Cere o programare</div>
+          <div class="programare-button text-xl p-2 w-11/12 lg:w-72 mx-auto lg:mx-0" onclick="scrollToContact()">Cere o programare</div>
         </div>
       </div>
     </section>
     <section id="offer-section">
-      <div class="container">
-        
+      <div class="container mx-auto px-4 flex flex-col justify-center items-center w-full lg:w-5/12 text-xl" style="text-align: center;">
+        <div class="headline radient-bg text-2xl lg:text-4xl">
+          Ofertă Specială
+        </div>
+        <div class="text">
+          Masaj by Pedro îți oferă 20% REDUCERE la orice masaj din gama oferită.
+        </div>
       </div>
     </section>
     <footer>
-      <div class="social-container">
-        <a href="http://www.facebook.com/">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="http://www.dribbble.com/">
-          <i class="fab fa-dribbble"></i>
-        </a>
-        <a href="http://www.facebook.com/">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="http://www.facebook.com/">
-          <i class="fab fa-instagram"></i>
-        </a>
+      <div class="container mx-auto px-4 h-full text-xl" id="contact">
+        <div class="w-full h-full flex flex-col justify-center">
+          <div class="headline text-2xl lg:text-4xl">
+            Informații de contact
+          </div>
+          <div class="flex">
+            <div class="pedro-bulevard hidden lg:block"></div>
+            <div class="flex flex-col">
+              <div class="small-headline text-xl lg:text-3xl">
+                <span class="green">Ai întrebări?</span> Contacteaza-mă si îți voi răspunde cu plăcere la orice întrebare ai nevoie despre masaje și beneficiile lor.
+              </div>
+              <div class="flex flex-col">
+                <div class="flex icon-container items-center lg:ml-12">
+                  <div class="location"></div>
+                  <div class="text">Universitate, Cladirea Dalles, Bucuresti</div>
+                </div>
+                <div class="flex icon-container items-center lg:ml-12">
+                  <div class="clock"></div>
+                  <div class="text">Luni – Vineri 08.00 – 19.00</div>
+                </div>
+                <div class="flex icon-container items-center lg:ml-12">
+                  <div class="whatsapp"></div>
+                  <a href="tel:0755 794 036" class="text">0755 794 036</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <h5>Joe Santos Garcia</h5>
-      <h6>Web Developer</h6>
     </footer>
 
     <script src="js/app.js"></script>

@@ -5,7 +5,6 @@
 }
 
 #imagine-section .headline {
-  font-size: 42px;
   font-family: 'Milliard ExtraBold';
   color: black;
   margin-bottom: 70px;
@@ -15,12 +14,7 @@
   max-width: 130px;
 }
 
-#imagine-section .idea-row {
-  margin-bottom: 40px;
-}
-
 #imagine-section .text {
-  font-size: 22px;
   font-family: 'Milliard Medium';
   color: black;
   text-align: center;

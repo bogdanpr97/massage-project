@@ -7,7 +7,7 @@
 @import "sections/story-section.css";
 @import "sections/how-section.css";
 @import "sections/massage-section.css";
-@import "portfolio/portfolio-projects.css";
+@import "sections/offer-section.css";
 @import "fonts/style.css";
 @import "footer-section.css";
 @import "utils.css";
@@ -18,10 +18,13 @@
   --dark-green: #608800;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: 'Milliard Book';
   font-weight:normal;
-  font-size: 42px;
   color: white;
 }
 
@@ -35,9 +38,7 @@ body {
   align-items: center;
   cursor: pointer;
   height: 60px;
-  width: 300px;
   font-family: 'Milliard SemiBold';
-  font-size: 25px;
   border-radius: 25px;
   background-color: var(--main-red);
   user-select: none;
@@ -45,13 +46,22 @@ body {
 
 .poza-overlay {
   background-image: url('../img/pedro-over.png');
-  position: absolute;
-  right: -200px;
-  width: 700px;
-  height: 100%;
   background-position: top center;
   background-repeat: no-repeat;
+  position: absolute;
+  right: -200px;
+  bottom: 0;
+  width: 700px;
+  height: 70%;
+  
   /* background-size: cover; */
+}
+
+.poza-pedro-main {
+  background-image: url('../img/pedro-over.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-container {
@@ -61,15 +71,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 870px;
+  /* height: 870px; */
   padding-top: 30px;
   margin-bottom: 80px;
 }
 
-.container {
+/* .container {
   max-width: 1270px;
   margin: 0 auto;
-}
+} */
 .light {
   font-family: 'Milliard Light';
 }
@@ -78,115 +88,112 @@ body {
   font-family: 'Milliard Bold';
 }
 
-header{
+#header{
   display: flex;
   flex-direction: column;
   /* padding: 20px; */
 }
-header .header-upper {
+#header .header-upper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 70px;
 }
-header .header-bottom {
+#header .header-bottom {
   position: relative;
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: start;
 }
-header .header-description-container {
+#header .header-description-container {
   max-width: 840px;
   display: flex;
   flex-direction: column;
 }
-header .headline {
-  font-size: 42px;
+#header .headline {
   font-family: 'Milliard ExtraBold';
 }
 
-header .headline-small {
+#header .headline-small {
   max-width: 700px;
   margin-bottom: 32px;
-  font-size: 42px;
   font-family: 'Milliard ExtraBold';
 }
 
-header .details {
-  font-size: 21px;
+#header .details {
   margin-bottom: 40px;
   max-width: 600px;
   font-family: 'Milliard Light';
 }
 
-header .logo{
-  width: 220px;
-  height: 132px;
-  background-image: url('../img/logo-good.svg');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#header .logo{
+  margin-left: 40px;
+  width: 100px;
+  height: 120px;
+  transform:scale(3.0);
+  /* background-image: url('../img/Logosvg.svg'); */
+  /* background-position: top center;
+  background-repeat: no-repeat; */
+  /* background-size: cover; */
 }
-header .header-text{
-  font-size: 24px;
-}
-header .menu-btn{
-  font-weight: 700;
-  color: #ff5253;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  font-size: 1.6rem;
-  display: none;
-  cursor: pointer;
+#header .header-text{
 }
 
+@media only screen and (max-width: 960px) {
+  /* .container{ 
+    width: 100%;
+    padding: 0px 25px;
+  } */
+  .header-text {
+    display: none !important;
+  }
+  #header .header-upper {
+    justify-content: center;
+  }
+  #header .logo{
+    margin-left: 0px;
+  }
 
-.mobile-menu{
-  display:none;
-  background: #fff;
-  flex-direction: column;
-  padding: 40px 0;
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 50%;
-  z-index: 10;
-  transform: translate3d(-100%, 0, 0);
-  transition: all .4s ease-in-out;
-  -webkit-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
-  box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
-}
-.mobile-menu.active{
-  transform: translate3d(0, 0, 0);
-}
-.mobile-menu a{
-  padding: 15px;
-  text-decoration: none;
-  color: black;
-
-}
-.mobile-menu a:hover{
-
-  text-decoration: none;
-  color: white;
-  background: #ff5253;
-}
-@media only screen and (max-width: 960px){
-  .container{ width: 100%}
+  #header .headline {
+    font-family: 'Milliard ExtraBold';
+  }
+  
+  #header .headline-small {
+    max-width: 700px;
+    margin-bottom: 32px;
+    font-family: 'Milliard ExtraBold';
+  }
 }
 /* Phones */
 @media only screen and (max-width: 767px){
-  header .header-menu{
+  /* .container{ 
+    width: 100%;
+    padding: 0px 25px;
+  } */
+  #header .header-upper {
+    justify-content: center;
+  }
+  #header .logo{
+    margin-left: 0px;
+  }
+
+  #header .headline {
+    font-family: 'Milliard ExtraBold';
+  }
+  
+  #header .headline-small {
+    max-width: 700px;
+    margin-bottom: 32px;
+    font-family: 'Milliard ExtraBold';
+  }
+  #header .header-menu{
     display: none;
   }
-  header .menu-btn{
+  #header .menu-btn{
     display: flex;
 
   }
-  header .logo{
+  #header .logo{
     font-size: 1.3rem;
   }
   .mobile-menu{

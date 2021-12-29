@@ -1,45 +1,71 @@
-footer{
-  background: #f9fafc;
-  padding: 100px 15px;
+footer {
+  background-color: #f7f7f7;
+  padding: 60px 0px;
 }
-footer .social-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  max-width: 400px;
-  margin: 0 auto;
-}
-footer .social-container a{
-  font-size: 3rem;
-  color: #8e8f91;
-  text-decoration: none;
-  transition: all .3s ease-in-out;
-  display: inline-block;
-  padding: 10px;
-}
-footer .social-container a:hover{
-  color: rgba(255,53,53,1);
-}
-footer h5{
-  font-size: 1rem;
-  color: Black;
-  text-transform: uppercase;
+
+footer .headline {
+  width: 100%;
   text-align: center;
-  margin: 20px 0;
-}
-footer h6{
-  font-size: .8rem;
-  color: Black;
-  text-transform: capitalize;
-  text-align: center;
+  font-family: 'Milliard ExtraBold';
+  margin-bottom: 52px;
+  color: black;
 }
 
-/* Tablets */
-@media only screen and (max-width: 960px){
-
+footer .small-headline {
+  color: black;
+  margin-bottom: 50px;
+  font-family: 'Milliard SemiBold';
 }
-/* Phones */
-@media only screen and (max-width: 767px){
 
+footer .green {
+  font-family: 'Milliard ExtraBold';
+  color: #769904;
+}
+
+footer .text {
+  color: black;
+}
+
+.icon-container {
+  margin-bottom: 18px;
+}
+
+footer .location {
+  width: 35px;
+  height: 35px;
+  background-image: url('../../img/location.png');
+  margin-right: 20px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer .clock {
+  width: 35px;
+  height: 35px;
+  background-image: url('../../img/clock.png');
+  margin-right: 20px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer .whatsapp {
+  width: 35px;
+  height: 35px;
+  background-image: url('../../img/whatsapp.png');
+  margin-right: 20px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer .pedro-bulevard {
+  width: 50%;
+  height: 380px;
+  background-image: url('../../img/pedro-bulevard.png');
+  margin-right: 60px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
